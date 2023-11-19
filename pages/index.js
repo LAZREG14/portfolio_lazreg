@@ -16,11 +16,11 @@ const Home = () => {
         <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
           {/* title */}
           <motion.h1 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden' className='h1'>
-            Transforming Ideas <br /> Into{' '} <span className='text-accent'> Digital Reality</span>
+          Explorateur Passionné: <br />Innovations en{' '} <span className='text-accent'> Data Science</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden' className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-          Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+          Bienvenue dans mon portfolio dédié à l'innovation dans la Data Science. <br/>En tant qu'explorateur passionné, je m'engage à repousser les limites de la technologie pour créer des solutions novatrices et pratiques.  <br/>J'ai hâte de partager avec vous mon parcours dans ces domaines en constante évolution.
           </motion.p>
           { /* btn */}
           <div className='flex justify-center xl:hidden relative'>

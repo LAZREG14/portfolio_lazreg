@@ -7,22 +7,47 @@ import {
   FaJs,
   FaReact,
   FaWordpress,
-  FaFigma,
+  FaJava,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
   SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiGnubash,
+  SiCplusplus,
+  SiPython,
+  SiMongodb,
+  SiNeo4J,
+  SiLatex,
+  SiApachesolr,
 } from "react-icons/si";
 
+import { Icon } from '@iconify/react';
 
 //  data
 const aboutData = [
   {
-    title: 'skills',
+    title: 'compétences',
     info: [
+
+      {
+        title: 'Data Science',
+        icons: [ <Icon icon="simple-icons:scikitlearn" width="40" height="40" />,
+                 <Icon icon="simple-icons:spacy" width="40" height="40" />,
+                 <Icon icon="simple-icons:pandas" />,
+                 <Icon icon="simple-icons:numpy"  />,
+                 //<Icon icon="simple-icons:nltk" width="40" height="40" />,
+                 <Icon icon="simple-icons:pytorch"  />,
+                 <Icon icon="devicon-plain:matplotlib"  />,
+                 <Icon icon="devicon-plain:keras-wordmark" color="white" width="40" height="40" />,]
+      },
+      {
+        title: 'Programmation',
+        icons: [ <SiPython />,
+                 <FaJava/>,
+                 <SiGnubash />,
+                 <SiCplusplus />]
+      },
       {
         title: 'Web Development',
         icons: [
@@ -36,56 +61,73 @@ const aboutData = [
         ],
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />]
+        title: 'SGBD',
+        icons: [ <SiMongodb />,
+                 <SiNeo4J/>,]
+      },
+      {
+        title: 'Autres',
+        icons: [ <SiLatex />,
+                 <SiApachesolr/>,
+]
       },
     ],
   },
   {
-    title: 'awards',
+    title: 'recherche',
     info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+      { 
+      title: 'Analyse Automatique de Texte Coranique',
+      stage: 'Depuis 2023',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'Analyse de Sentiments sur X (Twitter)',
+        stage: 'Depuis 2022',
+      },
+      {
+        title: 'Détection des Lieux de Paris dans la Chanson Française',
+        stage: '2021',
       },
     ],
   },
   {
-    title: 'experience',
+    title: 'expérience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Data Scientist - RATP group',
+        stage: '2022 - 2023',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Moniteur Informatique - INHA',
+        stage: '2019 - 2021',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Gestionnaire Ordonnancement - TRUSK',
+        stage: '2018 - 2019',
       },
     ],
   },
   {
-    title: 'credentials',
+    title: 'diplômes',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Langue et Informatique - Sorbonne Université - Master',
+        stage: '2022',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Langue et Techniques Informatiques - Sorbonne Université - Licence',
+        stage: '2019',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Psychologie du Développement - Université Paris Nanterre - BAC+2',
+        stage: '2017',
       },
+      /*
+      {
+        title: 'Langues Françaises - Université Djillali Liabès - Licence',
+        stage: '2016',
+      },
+      */
     ],
   },
 ];
@@ -97,9 +139,6 @@ import Circles from '../../components/Circles';
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from '../../variants';
-
-// counter
-import CountUp from 'react-countup';
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -127,7 +166,7 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Captivating <span className='text-accent'>stories</span> birth magnificient designs.
+            Un Aperçu de Mon  <span className='text-accent'>Parcours</span>.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -135,52 +174,9 @@ const About = () => {
             animate='show'
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-              1à years ago, j'ai commencé bla bla bla 1à years ago, j'ai commencé bla bla bla 1à years ago. 
+              Titulaire d'un Master Data Science de Sorbonne Université, j'ai acquis une expertise variée. Ma formation m'a permis de maîtriser l'analyse multilingue du texte, les compétences informatiques et la gestion de projets complexes. Toujours avide de connaissances, j'aborde chaque défi avec modestie, cherchant à innover tout en respectant les évolutions éthiques et réglementaires. Ma passion pour la résolution de problèmes et ma capacité à communiquer efficacement ont enrichi mon parcours académique.
           </motion.p>
-          {/* counters */}
-          <motion.div
-            variants={fadeIn('right', 0.6)}
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'>
-            <div className='flex flex-1 xl:gap-x-6'>
-              {/* experience */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} /> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of experience</div>
-              </div>
-              {/* clients */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5}/> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Satified clients
-                </div>
-              </div>
-              {/* projects */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5}/> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Finished projects
-                </div>
-              </div>
-              {/* awards */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={5}/> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Winning awards
-                </div>
-              </div>
-            </div>
-          </motion.div>
+          
         </div>
         {/* info */}
         <motion.div
@@ -216,7 +212,7 @@ const About = () => {
                   <div className='flex gap-x-4'>
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex)=>{
-                      return <div className='text-2xl text-white'>{icon}</div>;
+                      return <div className='text-4xl text-white'>{icon}</div>;
                     })}
                   </div>
                 </div>

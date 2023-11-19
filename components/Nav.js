@@ -3,21 +3,21 @@ import {
   HiHome,
   HiUser,
   HiViewColumns,
-  HiRectangleGroup,
-  HiChatBubbleBottomCenterText,
+  //HiRectangleGroup,
   HiEnvelope,
 } from 'react-icons/hi2';
+import { ImBlog } from "react-icons/im";
 
 // nav data
 export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'about', path: '/about', icon: <HiUser /> },
-  { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
-  { name: 'work', path: '/work', icon: <HiViewColumns /> },
+ //{ name: 'services', path: '/services', icon: <HiRectangleGroup /> },
+  { name: 'projets', path: '/work', icon: <HiViewColumns /> },
   {
-    name: 'testimonials',
-    path: '/testimonials',
-    icon: <HiChatBubbleBottomCenterText />,
+    name: 'blog',
+    path: '/blog',
+    icon: <ImBlog />,
   },
   {
     name: 'contact',

@@ -4,47 +4,22 @@ const workSlider = {
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb1.jpg',
-          link: 'https://google.com',
+          title: 'lieux de Paris',
+          path: '/spacy.jpg',
+          link: 'https://github.com/LAZREG14/Memoire/blob/main/Union_lieux_chansons_françaises/Lieux_Paris_chansons_françaises.ipynb',
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
-          link: 'https://facebook.com',
+          title: 'Ratp twitter',
+          path: '/ratp.jpg',
+          link: 'https://github.com/LAZREG14/Project-RATPgroup',
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
+          title: 'faq project',
+          path: '/faq.jpg',
+          link: 'https://github.com/LAZREG14/FAQ-Project',
         },
-        {
-          title: 'title',
-          path: '/thumb4.jpg',
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: 'title',
-          path: '/thumb4.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb1.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb2.jpg',
-          link: 'https://youtube.com',
-        },
-        {
-          title: 'title',
-          path: '/thumb3.jpg',
-          link: 'https://kooora.com',
-        },
-      ],
-    },
+      ]
+    }
   ],
 };
 
@@ -97,9 +72,9 @@ const WorkSlider = () => {
                     <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
                       <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
                         {/* title part 1 */}
-                        <div className='delay-100'>LIVE</div>
+                        <div className='delay-100'>Code</div>
                         {/* title part 2 */}
-                        <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'> PROJECT</div>
+                        <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'> Source</div>
                         {/* icon */}
                         <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-allduration-300 delay-200'><BsArrowRight /></div>
                       </div>
