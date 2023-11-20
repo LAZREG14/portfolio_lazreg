@@ -28,7 +28,7 @@ const Work = () => {
               animate='show'
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              Cette section présente quelques-uns des projets sur lesquels j'ai travaillé. Cependant, c'est seulement un petit échantillon de mon travail. Avec le temps, j'ai l'intention d'ajouter davantage de projets pour offrir une vue plus complète de mes compétences et de mon parcours professionnel. Merci pour votre intérêt et n'hésitez pas à revenir pour découvrir de nouvelles réalisations à mesure qu'elles seront ajoutées.
+                Cette section expose quelques projets sur lesquels j'ai travaillé. Je prévois d'enrichir cette liste pour offrir une vue plus exhaustive de mes compétences et de mon expérience à l'avenir.
             </motion.p>
           </div>
 

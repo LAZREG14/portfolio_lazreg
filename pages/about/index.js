@@ -39,15 +39,22 @@ const aboutData = [
                  //<Icon icon="simple-icons:nltk" width="40" height="40" />,
                  <Icon icon="simple-icons:pytorch"  />,
                  <Icon icon="devicon-plain:matplotlib"  />,
-                 <Icon icon="devicon-plain:keras-wordmark" color="white" width="40" height="40" />,]
+                 <Icon icon="devicon-plain:keras-wordmark" color="white" width="40" height="40" />,
+                 <SiMongodb />,
+                 <SiNeo4J/>]
       },
       {
         title: 'Programmation',
         icons: [ <SiPython />,
                  <FaJava/>,
                  <SiGnubash />,
-                 <SiCplusplus />]
+                 <SiCplusplus />,
+                 <FaJs />,
+                 <FaHtml5 />,
+                 <FaCss3 />,
+                ]
       },
+      /*
       {
         title: 'Web Development',
         icons: [
@@ -60,11 +67,13 @@ const aboutData = [
           <FaWordpress />
         ],
       },
+      
       {
         title: 'SGBD',
         icons: [ <SiMongodb />,
                  <SiNeo4J/>,]
       },
+      */
       {
         title: 'Autres',
         icons: [ <SiLatex />,
@@ -174,8 +183,7 @@ const About = () => {
             animate='show'
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-              Titulaire d'un Master Data Science de Sorbonne Université, j'ai acquis une expertise variée. Ma formation m'a permis de maîtriser l'analyse multilingue du texte, les compétences informatiques et la gestion de projets complexes. Toujours avide de connaissances, j'aborde chaque défi avec modestie, cherchant à innover tout en respectant les évolutions éthiques et réglementaires. Ma passion pour la résolution de problèmes et ma capacité à communiquer efficacement ont enrichi mon parcours académique.
-          </motion.p>
+            Titulaire d'un Master en Data Science de Sorbonne Université, je possède une expertise variée, allant de l'analyse multilingue du texte à la gestion de projets complexes, tout en privilégiant une approche éthique et innovante.          </motion.p>
           
         </div>
         {/* info */}
