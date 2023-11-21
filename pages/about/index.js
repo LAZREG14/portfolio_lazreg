@@ -39,9 +39,7 @@ const aboutData = [
                  //<Icon icon="simple-icons:nltk" width="40" height="40" />,
                  <Icon icon="simple-icons:pytorch"  />,
                  <Icon icon="devicon-plain:matplotlib"  />,
-                 <Icon icon="devicon-plain:keras-wordmark" color="white" width="40" height="40" />,
-                 <SiMongodb />,
-                 <SiNeo4J/>]
+                 <Icon icon="devicon-plain:keras-wordmark" color="white" width="40" height="40" />]
       },
       {
         title: 'Programmation',
@@ -78,7 +76,8 @@ const aboutData = [
         title: 'Autres',
         icons: [ <SiLatex />,
                  <SiApachesolr/>,
-]
+                 <SiMongodb />,
+                 <SiNeo4J/>]
       },
     ],
   },
