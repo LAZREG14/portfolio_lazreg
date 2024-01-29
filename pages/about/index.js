@@ -103,7 +103,7 @@ const aboutData = [
     info: [
       {
         title: 'Data Scientist - RATP group',
-        stage: '2022 - 2023',
+        stage: '2022 - 2024',
       },
       {
         title: 'Moniteur Informatique - INHA',
